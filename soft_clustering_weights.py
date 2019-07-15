@@ -2,8 +2,8 @@ def soft_clustering_weights(data, cluster_centres, **kwargs):
     
     """
     Function to calculate the weights from soft k-means
-    data: Array of data. Features arranged across the columns with each row being a different data point
-    cluster_centres: array of cluster centres. Input kmeans.cluster_centres_ directly.
+    data: Array of data. shape = N x F, for N data points and F Features
+    cluster_centres: Array of cluster centres. shape = Nc x F, for Nc number of clusters. Input kmeans.cluster_centres_ directly.
     param: m - keyword argument, fuzziness of the clustering. Default 2
     """
     
